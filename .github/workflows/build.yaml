@@ -6,6 +6,9 @@ jobs:
   build:
     name: Build Project
     runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      pull-requests: write
     steps:
       # Checkout
       - name: Checkout repository
